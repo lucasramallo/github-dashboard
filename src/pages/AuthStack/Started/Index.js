@@ -2,6 +2,7 @@ import { ImageBackground, Text, SafeAreaView, StyleSheet, Image, TouchableOpacit
 import Mascote from '../../../../assets/macote.png'
 import Background from '../../../../assets/background-start.png'
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import Separator from '../../../../assets/separador.png'
 
 export default function Start({ navigation }) {
   return (
@@ -14,6 +15,9 @@ export default function Start({ navigation }) {
           />
           <Text style={styles.logoText}>GitView</Text>
           <Text style={styles.text}>Welcome to our GitHub Viewer app! With it, you can view all your GitHub repositories in one place. Just enter your username and all your repositories will be instantly loaded using a public GitHub API.</Text>
+          <Image
+            source={Separator}
+          />
           <TouchableOpacity 
             onPress={() => navigation.navigate('Login')} 
             style={styles.button}
@@ -41,7 +45,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   mascote: {
-    marginTop: '30%',
+    marginTop: '15%',
   },
   logoText: {
     marginTop: 18,
@@ -56,15 +60,16 @@ const styles = StyleSheet.create({
     width: 330,
     marginTop: 4,
     fontFamily: 'Inter_400Regular',
-    letterSpacing: 1.5
+    letterSpacing: 1.5,
+    marginBottom: 12
   },
   button: {
     backgroundColor: '#FFFFFF',
     width: 70,
     height: 70,
     borderRadius: 20,
-    marginTop: '31%',
+    marginTop: '25%',
     alignItems: 'center',
     justifyContent: 'center'
-  }
+  },
 });
