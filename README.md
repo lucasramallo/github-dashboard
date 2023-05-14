@@ -15,7 +15,7 @@ A simple App project that allows you to view some user account information using
 
 - [Layout | Figma 🎨](https://www.figma.com/file/5xwPdCcM7ycwktVmURzmGN/GitHub-App?type=design&node-id=2%3A420&t=42a6gszAWUEeXj3z-1)
 
-![Capturar](https://github.com/lucasramallo/github-dashboard/assets/108425719/86afbc49-a973-4e4b-bdda-5ed1fc3379ea)
+![Capturar](https://github.com/lucasramallo/github-dashboard/assets/108425719/a974be41-396c-4ae4-82f9-4cf4e84461a4)
 
 ## Contribuidores
 
