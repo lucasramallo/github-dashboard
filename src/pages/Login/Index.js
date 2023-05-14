@@ -1,6 +1,6 @@
 import { ImageBackground, Text, SafeAreaView, StyleSheet, Image, TouchableOpacity, View, TextInput} from 'react-native';
-import Background from '../../../../assets/background-login.png'
-import logo from '../../../../assets/icon.png'
+import Background from '../../../assets/background-login.png'
+import logo from '../../../assets/icon.png'
 import Input from './components/Input';
 
 export default function Login({ navigation }) {
@@ -13,13 +13,14 @@ export default function Login({ navigation }) {
               style={styles.logo}
               source={logo}
             />
-            <Text style={styles.loginText}>Sign Up</Text>
-
-            <View style={styles.form}>
-              <Input placeholder="GitHub UserName" value={null} onChangeText={() => {}}/>
-              <Input placeholder="Email" value={null} onChangeText={() => {}}/>
-              <Input placeholder="Password" value={null} onChangeText={() => {}}/>
-            </View>
+          </View>
+          <View style={styles.title}>
+            <Text style={styles.loginText}>Your GitHub user: </Text>
+          </View>
+          <View style={styles.form}>
+            <Input placeholder="@example123" value={null} onChangeText={() => {}}/>
+            <TouchableOpacity style={styles.button}><Text style={styles.buttonText}>Searsh</Text></TouchableOpacity>
+            <Text style={styles.bottonText}>Is this safe?</Text>
           </View>
         </View>
       </ImageBackground>
@@ -46,7 +47,10 @@ const styles = StyleSheet.create({
     marginTop: 22
   },
   header: {
-  
+    
+  },
+  title: {
+    marginTop: '20%'
   },
   logo: {
     marginBottom: 31
@@ -55,5 +59,25 @@ const styles = StyleSheet.create({
     fontFamily: 'Inter_700Bold',
     color: '#FBFBFB',
     fontSize: 24
+  },
+  button: {
+    width: '100%',
+    height: 56,
+    backgroundColor: '#FFFFFF',
+    borderRadius: 12,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: 30
+  },
+  buttonText: {
+    fontSize: 16,
+    fontFamily: 'Inter_900Black',
+  },
+  bottonText: {
+    fontFamily: 'Inter_500Medium',
+    color: '#FBFBFB',
+    fontSize: 16,
+    textDecorationLine: 'underline',
+    marginTop: 35
   }
 });

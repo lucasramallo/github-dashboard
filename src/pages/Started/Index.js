@@ -1,8 +1,8 @@
 import { ImageBackground, Text, SafeAreaView, StyleSheet, Image, TouchableOpacity, View} from 'react-native';
-import Mascote from '../../../../assets/macote.png'
-import Background from '../../../../assets/background-start.png'
+import Mascote from '../../../assets/macote.png'
+import Background from '../../../assets/background-start.png'
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import Separator from '../../../../assets/separador.png'
+import Separator from '../../../assets/separador.png'
 
 export default function Start({ navigation }) {
   return (

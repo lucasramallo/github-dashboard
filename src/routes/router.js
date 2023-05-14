@@ -1,15 +1,12 @@
 import { NavigationContainer } from '@react-navigation/native';
-import AuthStack from './AuthStack';
-import AppStack from './AppStack';
-
+import StackNavigator from './StackNavigator';
 
 export default function Router() {
-
-    const auth = false// Indica se o usuario esta altenticado
-
     return(
       <NavigationContainer>
-        { auth ? <AppStack /> : <AuthStack /> }
+        <StackNavigator />
       </NavigationContainer>
     )
 }
+
+
