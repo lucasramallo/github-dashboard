@@ -5,7 +5,7 @@ export default function Home({ navigation }) {
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
         <Text>Home!</Text>
-        <Button type="primary">primary</Button>
+        <Button type="primary" onPress={() => navigation.goBack()} >primary</Button>
         <Button type="warning">warning</Button>
       </View>
     );

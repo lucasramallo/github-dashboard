@@ -3,8 +3,7 @@
 A simple App project that allows you to view some user account information using free GitHub API
 > under development
 
-![Capturar](https://github.com/lucasramallo/github-dashboard/assets/108425719/35b16445-59d8-4bb3-a5c0-169b35fb1d87)
-
+![Capturar](https://github.com/lucasramallo/github-dashboard/assets/108425719/a5484de4-3c15-4c27-97ac-02a8c98ea5be)
 
 ## Stack 
 

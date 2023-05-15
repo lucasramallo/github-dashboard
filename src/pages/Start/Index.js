@@ -8,18 +8,14 @@ export default function Login({ navigation }) {
     <SafeAreaView style={styles.container}>
       <ImageBackground source={Background} style={styles.background}>
         <View style={styles.content}>
-          <View style={styles.header}>
-            <Image
-              style={styles.logo}
-              source={logo}
-            />
-          </View>
           <View style={styles.title}>
             <Text style={styles.loginText}>Your GitHub user: </Text>
           </View>
           <View style={styles.form}>
             <Input placeholder="@example123" value={null} onChangeText={() => {}}/>
-            <TouchableOpacity style={styles.button}><Text style={styles.buttonText}>Searsh</Text></TouchableOpacity>
+            <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('TabNavigator')}>
+              <Text style={styles.buttonText}>Searsh</Text>
+            </TouchableOpacity>
             <Text style={styles.bottonText}>Is this safe?</Text>
           </View>
         </View>
