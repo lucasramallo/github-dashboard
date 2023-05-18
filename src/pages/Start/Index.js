@@ -1,6 +1,6 @@
 import { ImageBackground, Text, SafeAreaView, StyleSheet, Image, TouchableOpacity, View, TextInput} from 'react-native';
 import Background from '../../../assets/background-login.png'
-import logo from '../../../assets/icon.png'
+//import logo from '../../../assets/icon.png'
 import Input from './components/Input';
 
 export default function Login({ navigation }) {
