@@ -1,9 +1,22 @@
-import { ImageBackground, Text, SafeAreaView, StyleSheet, Image, TouchableOpacity, View, TextInput} from 'react-native';
+import React, { useState } from 'react';
+import { 
+  ImageBackground, 
+  Text, 
+  SafeAreaView, 
+  StyleSheet, 
+  TouchableOpacity, 
+  View,
+} from 'react-native';
+
 import Background from '../../../assets/background-login.png'
 //import logo from '../../../assets/icon.png'
 import Input from './components/Input';
+import Dialog from './components/DialogComponent';
 
 export default function Login({ navigation }) {
+
+  const [dialogVisible, setDialogVisible] = useState(false);
+
   return (
     <SafeAreaView style={styles.container}>
       <ImageBackground source={Background} style={styles.background}>
@@ -16,7 +29,10 @@ export default function Login({ navigation }) {
             <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('TabNavigator')}>
               <Text style={styles.buttonText}>Searsh</Text>
             </TouchableOpacity>
-            <Text style={styles.bottonText}>Is this safe?</Text>
+            <TouchableOpacity onPress={() => setDialogVisible(true)}>
+              <Text style={styles.bottonText}>Is this safe?</Text>
+            </TouchableOpacity>
+            <Dialog visible={dialogVisible} onDismiss={() => setDialogVisible(false)} />
           </View>
         </View>
       </ImageBackground>
