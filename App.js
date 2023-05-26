@@ -12,9 +12,7 @@ import {
   Inter_500Medium,
 } from '@expo-google-fonts/inter';
 
-
 export default function App() {
-
   const [fontsLoaded] = useFonts({
     Inter_900Black, 
     Inter_400Regular, 
@@ -29,13 +27,13 @@ export default function App() {
 
   return (
     <>
-    <PaperProvider>
-      <StatusBar
-        backgroundColor="transparent"
-        translucent={true}
-      />
-      <Router />
-    </PaperProvider>
+      <PaperProvider>
+        <StatusBar
+          backgroundColor="transparent"
+          translucent={true}
+        />
+        <Router />
+      </PaperProvider>
     </>
   );
 }
