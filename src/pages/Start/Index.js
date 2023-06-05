@@ -8,7 +8,6 @@ import {
   View,
 } from 'react-native';
 import Background from '../../../assets/background-login.png'
-//import logo from '../../../assets/icon.png'
 import Input from './components/Input';
 import Dialog from './components/DialogComponent';
 
